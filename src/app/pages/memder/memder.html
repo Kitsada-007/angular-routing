@@ -1,0 +1,9 @@
+<!-- <app-header></app-header> -->
+<p>member works!</p>
+<button routerLink="/member/list">List Members</button>
+<button routerLink="/member/profile">Member Profile</button>
+<button (click)="changePage1()"> List Memders(Program)</button>
+<button (click)="changePage2()"> Memder Profile(Program)</button>
+<button routerLink="/member/test" [queryParams]="{name: 'Aj.M'}">Test QueryParams</button>
+<button (click)="sendParams()">Test QueryParams (Program)</button>
+<router-outlet></router-outlet>
