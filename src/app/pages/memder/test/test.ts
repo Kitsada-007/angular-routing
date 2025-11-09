@@ -11,10 +11,10 @@ export class Test {
     id = ''
     name = ''
       constructor(private activeatedRoute: ActivatedRoute) {
-    activeatedRoute.queryParamMap.subscribe((params) => {
-      this.name =
-        this.activeatedRoute.snapshot.queryParamMap.get('name') || 'No Name';
-    });
+      activeatedRoute.queryParamMap.subscribe((params) => {
+        this.name =
+          this.activeatedRoute.snapshot.queryParamMap.get('name') || 'No Name';
+      });
   }
       ngOnInit() {
       this.id = this.activeatedRoute.snapshot.paramMap.get('id') || '';
